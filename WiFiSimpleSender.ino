@@ -21,8 +21,8 @@
 
 #include "arduino_secrets.h"
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = SECRET_SSID;        // your network SSID (name)
-char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "Lee-2F";        // your network SSID (name)
+char pass[] = "034557842";    // your network password (use for WPA, or use as key for WEP)
 
 // To connect with SSL/TLS:
 // 1) Change WiFiClient to WiFiSSLClient.
