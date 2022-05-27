@@ -18,11 +18,13 @@
 #elif defined(ARDUINO_ESP8266_ESP12)
   #include <ESP8266WiFi.h>
 #endif
+  #include<WiFiClient.h>
+  #include<WiFi.h>
 
 #include "arduino_secrets.h"
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = SECRET_SSID;        // your network SSID (name)
-char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "Lee-2F";        // your network SSID (name)
+char pass[] = "034557872";    // your network password (use for WPA, or use as key for WEP)
 
 // To connect with SSL/TLS:
 // 1) Change WiFiClient to WiFiSSLClient.
@@ -35,7 +37,7 @@ MqttClient mqttClient(wifiClient);
 
 const char broker[] = "test.mosquitto.org";
 int        port     = 1883;
-const char topic[]  = "arduino/simple";
+const char topic[]  = "NTOUEE/099018";
 
 void setup() {
   //Initialize serial and wait for port to open:
