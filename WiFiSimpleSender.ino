@@ -18,6 +18,8 @@
 #elif defined(ARDUINO_ESP8266_ESP12)
   #include <ESP8266WiFi.h>
 #endif
+ #include<WiFi.h>
+ #include<WiFiClient.h>
 
 #include "arduino_secrets.h"
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
@@ -35,7 +37,7 @@ MqttClient mqttClient(wifiClient);
 
 const char broker[] = "test.mosquitto.org";
 int        port     = 1883;
-const char topic[]  = "arduino/simple";
+const char topic[]  = "NTOUEE/0990018";
 
 const long interval = 1000;
 unsigned long previousMillis = 0;
